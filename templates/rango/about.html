@@ -1,0 +1,29 @@
+<! DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+
+    <head>
+        <title>About Rango</title>
+    </head>
+
+    <body>
+        <h1>This is the tutorial site from</h1>
+        <div>
+            The website design book <strong>tango with django</strong><br/>
+            This tutorial has been put together by {{author}}<br/>
+            Working on this book becuase of WAD2:<br/>
+            <a href='/rango/'> Return</a>
+        </div>
+        <div>
+            This is a <strong>media</strong> cat<br/>
+            <img src= '{{MEDIA_URL}}cat.jpg' />
+        </div>
+        <div>
+            This is a photo of our WAD2 lecturer, David manlove:<br/>
+            <img src= '{%static "images/david.jpg" %}' alt='Our lecturer; David manlove' />
+        </div>
+    </body>
+
+</html>
