@@ -18,5 +18,7 @@
         </div>
         <div>
             Here is a static image file so that i pass some tests;<br/>
-            <img src="{% static "images/semicolon.gif" %}" alt='Scary picture' />
+            <img src="{% static "images/semicolon.gif" %}" alt='Scary picture' /><br />
+            This page has visits: {{ visits }}
+        </div>
 {% endblock %}
